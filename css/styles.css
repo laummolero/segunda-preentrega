@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/**
+para usar fuentes, primero traer el import de google fonts,
+despues aplicarlo con la propiedad font-family.
+
+medidas
+1rem =16px
+2.7=? (multiplicar el rem desdeado por 16 para calcular
+el equivalente a px)
+
+16px=100%
+10px= %? 62.5% (multiplicar 10 por 100 y dividir entre 16)
+**/
+
+body{
+    background-color: #E3FEF7;
+    
+}
+header{
+    background-color: #77B0AA;
+}
+.navBar{
+    list-style: none;
+    font-weight: bold;
+    color: #003C43;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+.navBar li a{
+    text-decoration: none;
+    color: black;
+}
+.foureverHome{
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.foureverHome img{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    
+}
+h1{
+    text-align: center;
+    margin: 50px;
+    color: #003C43;
+}
+.members{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+
+.profiles h2{
+    color: #135D66;
+    display: flex;
+    justify-content: space-evenly;
+}
+.profiles p{
+    width: 12.5rem;
+    height: 12.5rem;
+    color: #003C43;
+}
+.profiles img{
+    width: 200px;
+    height: auto;
+    
+}
+.videoTitles{
+    display: flex;
+    justify-content: space-evenly;
+}
+.videoTitles h1{
+    color: #003C43;
+}
+
+.videos{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    gap: 20px;
+    flex-wrap: wrap;
+    ;
+}
+.videos img{
+    width: 100px;
+    height: 100px;
+}
+.news-container{
+    display: grid;
+    width: 80%;
+    height: 31.25rem;
+    gap: 1.25rem;
+    justify-content: center;
+    padding-left: 12.5rem;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 12.5rem 12.5rem;
+    grid-template-areas: 
+    "divImg1 divInfo1"
+    "divImg2 divInfo2"
+    ;
+}
+.divImg1{
+    grid-area: divImg1;
+}
+.divInfo1{
+    grid-area: divInfo1;
+}
+.divImg2{
+    grid-area: divImg2;
+}
+.divInfo2{
+    grid-area: divInfo2;
+}
+.news-container div a img{
+    width: 100%;
+    height: auto;
+}
+.news-container div p{
+    width: 100%;
+    height: auto;
+}
+.socials{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    gap: 30px;
+}
+
+.socials img{
+    width: 50px;
+    height: 50px;
+}
+
+footer{
+    background-color: #77B0AA;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.albumYear{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+    color: #003C43;
+}
+.albumSpotify{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+.albumSpotify img{
+    width: 100px;
+    height: 100px;
+    
+}
