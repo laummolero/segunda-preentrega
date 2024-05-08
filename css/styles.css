@@ -20,8 +20,11 @@ body{
     background-color: #E3FEF7;
     
 }
-header{
+.header{
     background-color: #77B0AA;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .navBar{
     list-style: none;
@@ -152,6 +155,7 @@ footer{
     width: 100%;
     height: 50px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-left: 30px;
@@ -176,4 +180,21 @@ footer{
     width: 100px;
     height: 100px;
     
+}
+
+@media (max-width:560px){
+    .navBar{
+        flex-direction: column;
+        height: 200px;
+    }
+}
+
+@media (max-width:430px){
+    footer{
+        flex-direction: column;
+        height: 250px;
+    }
+    .socials{
+        flex-direction: column;
+    }
 }
